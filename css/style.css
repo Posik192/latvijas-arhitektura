@@ -1,0 +1,371 @@
+
+/* Mājaslapas pamata noformējums */
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f6f3ee;
+    color: #292929;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: Georgia, serif;
+    color: #641f2c;
+}
+
+/* Galvene un navigācija */
+header {
+    background-color: #641f2c;
+    padding: 20px 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+header h2 {
+    color: white;
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+/* Galvenais saturs */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+section h2 {
+    font-size: 30px;
+}
+
+/* Sākumlapas galvenā sadaļa */
+.hero {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 10px;
+}
+
+.hero img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin: 20px 0;
+}
+
+/* Pogu noformējums */
+.button, button {
+    display: inline-block;
+    background-color: #641f2c;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.button:hover, button:hover {
+    background-color: #4a1520;
+}
+
+/* Attēlu galerija */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.gallery article {
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #ded8cf;
+    border-radius: 6px;
+    box-shadow: 0 3px 8px #0000000d;
+}
+
+.gallery img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
+.gallery h3 {
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.gallery p {
+    font-size: 14px;
+    margin: 6px 0;
+}
+
+/* Attēlu karuselis */
+.carousel {
+    max-width: 850px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ded8cf;
+    border-radius: 6px;
+}
+
+.carousel img {
+    width: 100%;
+    height: 420px;
+    object-fit: contain;
+    background-color: #f6f3ee;
+}
+
+#carousel-caption {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+/* Informācijas avoti */
+#avoti a {
+    color: #641f2c;
+}
+
+/* Kājene */
+footer {
+    background-color: #641f2c;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+footer a {
+    color: white;
+}
+
+/* Pielāgošana planšetēm */
+@media (max-width: 900px) {
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero img {
+        height: 350px;
+    }
+}
+
+/* Pielāgošana mobilajiem telefoniem */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .hero img, .carousel img {
+        height: 250px;
+    }
+
+    .gallery img {
+        height: 220px;
+    }
+
+    button {
+        padding: 10px 15px;
+        font-size: 14px;
+    }
+}
+
+
+/* Galvenās sadaļas dizaina papildinājumi */
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+/* Bordo līnija zem virsraksta */
+.hero h1::after {
+    content: "";
+    display: block;
+    width: 100px;
+    height: 4px;
+    background-color: #641f2c;
+    margin: 20px auto;
+}
+
+/* Galvenais attēls ar nobīdītu rāmi */
+.hero figure {
+    margin: 30px 8px 20px;
+}
+
+.hero img {
+    display: block;
+    margin: 0;
+    border-radius: 2px;
+    box-shadow: -8px 8px 0 #641f2c;
+}
+
+/* Attēla paraksts */
+.hero figcaption {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 16px;
+    color: #641f2c;
+    font-family: Georgia, serif;
+}
+
+/* Sadaļu virsraksti */
+section h2 {
+    border-left: 4px solid #641f2c;
+    padding-left: 15px;
+}
+
+/* Galerijas kartīšu papildinājumi */
+.gallery article {
+    padding: 12px;
+    border-radius: 3px;
+}
+
+.gallery img {
+    border-radius: 0;
+    border-bottom: 4px solid #641f2c;
+}
+
+.gallery h3 {
+    margin: 15px 0 10px;
+}
+
+/* Pielāgošana mobilajiem telefoniem */
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .hero img {
+        box-shadow: -5px 5px 0 #641f2c;
+    }
+
+    .hero figcaption {
+        font-size: 13px;
+    }
+}
+
+/* Informācijas avotu noformējums */
+#avoti li {
+    margin-bottom: 8px;
+}
+
+#avoti a {
+    text-decoration: none;
+}
+
+#avoti a:hover {
+    text-decoration: underline;
+}
+
+/* Navigācijas josla paliek ekrāna augšpusē */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Virsraksti netiek paslēpti aiz navigācijas joslas */
+html {
+    scroll-padding-top: 100px;
+}
+
+html {
+    scroll-padding-top: 100px;
+    scroll-behavior: smooth;
+}
+
+
+/* Informācija par izstādi */
+#par {
+    padding: 20px 0;
+}
+
+#par p {
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+/* Izstādes rādītāji */
+.about-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    gap: 20px;
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid #dbc5c9;
+}
+
+.about-stats h3 {
+    font-size: 32px;
+    margin: 0;
+}
+
+.about-stats p {
+    margin: 5px 0;
+}
+
+/* Pielāgošana telefoniem */
+@media (max-width: 600px) {
+    #par {
+        padding: 20px;
+    }
+
+    .about-stats {
+        grid-template-columns: 1fr;
+    }
+}
