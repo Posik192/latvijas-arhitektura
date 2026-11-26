@@ -10,11 +10,12 @@ Projekta mērķis ir izveidot interaktīvu un responsīvu virtuālo izstādi par
 - **Izstādes tēma:** Latvijas arhitektūra
 - **Izstādes nosaukums:** Latvijas arhitektūra cauri laikmetiem
 
-## 2. Projekta autors
+## 2. Projekta autori
 
-- Autors: Roberts Justs
+- Roberts Justs
+- Maksims Kožans
 - Grupa: P25-2
-- Darba forma: individuāls darbs
+- Darba forma: komandas darbs
 
 ## 3. GitHub repozitorijs
 
@@ -49,17 +50,20 @@ Projekta repozitorijs: https://github.com/Posik192/latvijas-arhitektura
 
 ## 7. Projekta izstrādes ieguldījums
 
-Projekts tika izstrādāts individuāli.
-
-Paveiktie darbi:
+### Roberts Justs
 
 - HTML struktūras izveide.
 - CSS dizaina izstrāde.
 - Informācijas un attēlu atlase.
 - JavaScript karuseļa programmēšana.
-- Responsīvā dizaina pārbaude.
-- HTML un CSS validācija.
-- Projekta dokumentācijas sagatavošana.
+- Projekta sākotnējās dokumentācijas sagatavošana.
+
+### Maksims Kožans
+
+- Responsīvā dizaina pārbaude un uzlabošana.
+- Mājaslapas funkcionalitātes testēšana.
+- HTML un CSS atkārtota validācija.
+- Konstatēto kļūdu labošana.
 
 ## 8. Informācijas avoti
 
