@@ -321,11 +321,20 @@ header {
 /* Virsraksti netiek paslēpti aiz navigācijas joslas */
 html {
     scroll-padding-top: 100px;
+    scroll-behavior: smooth;
 }
 
-html {
-    scroll-padding-top: 100px;
-    scroll-behavior: smooth;
+/* Papildu atstarpe, ja navigācija aizņem vairākas rindas */
+@media (max-width: 700px) {
+    html {
+        scroll-padding-top: 140px;
+    }
+}
+
+@media (max-width: 380px) {
+    html {
+        scroll-padding-top: 175px;
+    }
 }
 
 

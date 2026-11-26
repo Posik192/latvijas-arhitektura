@@ -68,3 +68,15 @@ Projekta repozitorijs: https://github.com/Posik192/latvijas-arhitektura
 ## 8. Informācijas avoti
 
 Informācijas avoti, fotogrāfiju autori un licences ir norādīti tīmekļa vietnes sadaļā "Avoti".
+
+## 9. Koda sakārtošana un atkārtota pārbaude
+
+- Failā `index.html` sakārtotas koda atkāpes, nemainot HTML elementus, atribūtus un saturu.
+- Failā `css/style.css` apvienoti divi vienādi `html` pamatselektori. Saglabāta vienmērīga ritināšana.
+- Pievienotas ritināšanas atstarpes ekrāniem līdz 700 px (140 px) un līdz 380 px (175 px), lai fiksētā navigācijas josla neaizsegtu sadaļu virsrakstus.
+- Chromium pārlūkprogrammā pārbaudītas visas 7 iekšējās navigācijas saites un karuseļa pogas. Pārbaudīta attēlu pārslēgšana abos virzienos, automātiskā pārslēgšana ik pēc 5 sekundēm, tās apturēšana un atsākšana.
+- Responsīvais izkārtojums pārbaudīts 21 ekrāna platumā no 320 līdz 1440 px, izmantojot pārlūkprogrammas skata laukuma emulāciju. Horizontāla ritināšana netika konstatēta.
+- Pirms un pēc labojumiem salīdzināti ekrānattēli 320, 390, 768 un 1440 px platumā; attēli sakrita pikseļu līmenī. Dizains, saturs, attēlu faili un JavaScript kods nav mainīti.
+- Atkārtoti veikta lokāla HTML sintakses un CSS noteikumu, selektoru un īpašību pārbaude; kļūdas netika konstatētas. JavaScript sintakse pārbaudīta ar Node.js.
+
+**Pārbaudes ierobežojumi:** labojumu un automatizēto pārbaužu sagatavošanā izmantots MI. Pārlūkprogrammas pārbaudēs projekta lokālie resursi tika iegulti testa lapā. Fiziska mobilā ierīce netika izmantota. Tīkla piekļuves ierobežojumu dēļ atkārtota tiešsaistes W3C HTML un CSS validācija un 19 ārējo saišu pieejamība nav pārbaudīta. Mapē `images` saglabāti iepriekšējās validācijas ekrānattēli; tie nav jaunās pārbaudes rezultāti. Pirms iesniegšanas jāveic atkārtota validācija vietnēs https://validator.w3.org/nu/ un https://jigsaw.w3.org/css-validator/ un jāatjauno ekrānattēli.
